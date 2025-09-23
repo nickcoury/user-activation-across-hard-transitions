@@ -1,10 +1,12 @@
-const input = document.querySelector('input');
-const button = document.querySelector('button');
+const inputBox = document.querySelector('input');
+const focusButton = document.querySelector('#focus');
+const vibrateButton = document.querySelector('#vibrate');
 function focusinput() {
-  input.focus();
-  input.select();
+  inputBox.focus();
+  inputBox.select();
 }
 function vibrate() {
   navigator.vibrate([100, 100, 100, 100, 100]);
 }
-button.onclick = focusinput;
+focusButton.onclick = focusinput;
+vibrateButton.onclick = vibrate;
