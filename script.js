@@ -6,7 +6,7 @@ function focusinput() {
   inputBox.select();
 }
 function vibrate() {
-  navigator.vibrate([100, 100, 100, 100, 100]);
+  window.navigator.vibrate(200);
 }
 focusButton.onclick = focusinput;
 vibrateButton.onclick = vibrate;
