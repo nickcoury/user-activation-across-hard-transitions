@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Page 2</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <input />
+        <a href="/page1.html">
+          <span>Page 1 without input plate auto-focus or initial vibrate.</span>
+        </a>
+        <div>
+          An inline script just focused the textarea on page load and tried to vibrate.
+        </div>
+        <button onclick="focusinput">
+          Call focus() on input same-document
+        </button>
+        <button onclick="vibrate">
+          Vibrate
+        </button>
+      </div>
+    </div>
+    <script src="/script.js" defer></script>
+    <script>
+      focusinput();
+      navigator.vibrate([100, 100, 100, 100, 100]);
+    </script>
+  </body>
+</html>
