@@ -31,10 +31,9 @@
       showKeyboard();
 
       // Do this once here and remove the attribute so it can be activated manually.
-      const inputBox = document.querySelector('input');
       window.navigator.virtualKeyboard?.show()
       setTimeout(() => {
-        inputBox.removeAttribute('virtualkeyboardpolicy');
+        document.querySelector('input').removeAttribute('virtualkeyboardpolicy');
       }, 1000);
 
       window.navigator.vibrate(200);
