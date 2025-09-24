@@ -18,8 +18,8 @@
         <div>
           An inline script just focused the textarea on page load and tried to vibrate.
         </div>
-        <button id="focus">
-          Call focus() on input same-document
+        <button id="keyboard">
+          Show keyboard by calling focus() and navigator.virtualKeyboard.show()
         </button>
         <button id="vibrate">
           Vibrate
@@ -28,7 +28,7 @@
     </div>
     <script src="script.js"></script>
     <script>
-      focusinput();
+      showKeyboard();
       window.navigator.vibrate(200);
     </script>
   </body>

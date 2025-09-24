@@ -1,12 +1,13 @@
 const inputBox = document.querySelector('input');
-const focusButton = document.querySelector('#focus');
+const keyboardButton = document.querySelector('#keyboard');
 const vibrateButton = document.querySelector('#vibrate');
-function focusinput() {
+function showKeyboard() {
   inputBox.focus();
   inputBox.select();
+  navigator.virtualKeyboard?.show()
 }
 function vibrate() {
   window.navigator.vibrate(200);
 }
-focusButton.onclick = focusinput;
+keyboardButton.onclick = showKeyboard;
 vibrateButton.onclick = vibrate;
